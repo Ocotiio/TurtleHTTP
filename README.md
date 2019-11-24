@@ -1,2 +1,2 @@
-# TurtleHTTP3
- 
+# TurtleHTTP
+Turtle HTTP access to data.
