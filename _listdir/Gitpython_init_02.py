@@ -109,7 +109,7 @@ author = Actor("OT", "OT@example.com")
 committer = Actor("OT", "OT@example.com")
 # commit by commit message and author and committer
 print('index.commit:')
-commit_message = 'tidying...'
+commit_message = 'Beeping and booping.'
 repo.index.commit(commit_message, author=author, committer=committer)            ## Commit the index changes
 print()
 

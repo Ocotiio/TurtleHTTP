@@ -1,1 +1,1 @@
-lua2.lua
+--lua2
