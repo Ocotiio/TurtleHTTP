@@ -49,7 +49,7 @@ print('for file in repo.untracked_files:')
 for file in repo.untracked_files:             ## for each file in the subdir, compose a new_file_path by os.path.join-ing the repo's working_tree_directory and the file name
      if file != '.git':
          print('file:', file)
-         new_file_path = Path(os.path.join(repo.working_tree_dir, file))
+         new_file_path = (os.path.join(repo.working_tree_dir, file))
          print('new_file_path:', new_file_path)
          print('repo.index:', repo.index)
          #open(file,'w').close
