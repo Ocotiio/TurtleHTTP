@@ -1,1 +1,1 @@
-["gps_test3_local_init.lua", "lua1.lua", "lua2.lua", "lua3.lua", "mdmtrt3.lua", "modemrcv1.lua", "ser6modem.lua", "serialize1_init.lua", "serialize4recall.lua", "startup_http.lua", "transitPosSer2.lua", "transitSerialize4.lua", "trtPos.txt"]
+["gps_test3_local_init.lua", "modemrcv1.lua", "ser6modem.lua", "serialize1_init.lua", "serialize4recall.lua", "transitPosSer2.lua", "transitRawSer4.lua", "trtPos.txt"]
