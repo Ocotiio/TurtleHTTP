@@ -1,7 +1,13 @@
+### PURPOSE:
+### Generates the cc_dir_miners_list.json from %HOMEPATH%\Documents\GitHub\TurtleHTTP\computercraft_dir\miners\
+
 import os
 import json
 
-### os.environ
+
+### Directory to make a list of:
+### %HOMEPATH%\Documents\GitHub\TurtleHTTP\computercraft_dir\miners
+# os.environ
 home = os.environ.get('HOMEPATH')
 path_join = os.path.join(home, 'Documents\GitHub\TurtleHTTP\computercraft_dir\miners')
 dir_list = os.listdir(path_join)
