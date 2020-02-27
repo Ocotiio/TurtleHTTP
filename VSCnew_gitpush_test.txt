@@ -1,3 +1,0 @@
-TXT file generated within VSC, placed into TurtleHTTP via VSC.
-
-Get this to push to the internet.
