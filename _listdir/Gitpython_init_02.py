@@ -4,6 +4,7 @@ import sys, os
 from git import Repo
 
 from pathlib import Path
+from os import path
 
 exec(open('listdir_miners_list.py').read())
 
@@ -48,12 +49,13 @@ print()
 print('for file in repo.untracked_files:')
 for file in repo.untracked_files:             ## for each file in the subdir, compose a new_file_path by os.path.join-ing the repo's working_tree_directory and the file name
      if file != '.git':
-         print('file:', file)
-         new_file_path = (os.path.join(repo.working_tree_dir, file))
-         print('new_file_path:', new_file_path)
-         print('repo.index:', repo.index)
-         #open(file,'w').close
-         repo.index.add([new_file_path])             ## Add the file located at new_file_path to the repo's index
+        print('file:', file)
+        new_file_path = (os.path.join(repo.working_tree_dir, file))
+        print('new_file_path:', new_file_path)
+        print('repo.index:', repo.index)
+        #open(file,'w').close
+        repo.index.add([new_file_path])             ## Add the file located at new_file_path to the repo's index
+
 print()
 
 
@@ -66,7 +68,12 @@ for file in repo.index.diff(None):             ## for each file in the subdir, c
     print('new_file_path:', new_file_path)
     print('repo.index:', repo.index)
     #open(new_file_path,'w').close
-    repo.index.add([new_file_path])             ## Add the file located at new_file_path to the repo's index
+    print(str(path.exists(new_file_path)))
+    if path.exists(new_file_path):
+        repo.index.add([new_file_path])             ## Add the file located at new_file_path to the repo's index
+    else:
+        print(new_file_path, " does not exist. Skip.")
+    #repo.index.add([new_file_path])             ## Add the file located at new_file_path to the repo's index
     print()
 print()
 
