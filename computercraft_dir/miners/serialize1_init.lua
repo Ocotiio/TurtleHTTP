@@ -10,6 +10,7 @@ local tArgs = { ... }
 if #tArgs ~= 4 then
     print( "Usage: serialize1_init_x x y z nsew" )
     print( "Input turtle's x y z nsew" )
+    print("x, y, z: input integers. nsew: input n, s, e, or w; script will parse.")
     return
 end
 
