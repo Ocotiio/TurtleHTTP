@@ -2,7 +2,7 @@
 
 -Turtle HTTP Git repo management and MineCraft Turtle's make-shift git access to data.
 
-## 111 ### ### ###
+## 1 ### ### ###
 
 **USAGE:**
 
@@ -16,13 +16,13 @@
 
     (2) In MineCraft, execute 'gitFetch3_iter.lua' to retrieve all the \miners\ programs.
 
-## /1/ ### ### ###
+## /1 ### ### ###
 
-## 222 ### ### ###
+## 2 ### ### ###
 
 **INSIDE THIS GIT REPO:**
 
-_\TurtleHTTP\_listdir\_
+*\TurtleHTTP\_listdir\*
 
 -SCRIPTS:
 
@@ -42,7 +42,13 @@ _\TurtleHTTP\_listdir\_
 
     - 'cc_dir_miners_list.json' -- .json file for MineCraft Turtle's to download and refer to. Contains program names for generating all the HTTP download requests.
 
-_\computercraft_dir\miners\_
+*\computercraft_dir\miners\*
+
+*\gitFetch\*
+
+    - 'gitFetch3_iter.lua' -- Turtle's git fetch.
+    
+*\miners\*
 
     - '_fromNN.txt' -- Debugging/development reference of which computer## these lua scripts are from. list_dir_miners_list.py ignores this file ('_' hides it.)
 
@@ -64,16 +70,16 @@ _\computercraft_dir\miners\_
 
         - 'transitRawSer4.lua' -- FUNCTION: Transit the turtle to the specific location (x, y, z). Turtle will determine the number of steps needed to arrive at that location. Serializes afterward.
 
-## /2/ ### ### ###
+## /2 ### ### ###
 
 
 
-## 333 ### ### ###
+## 3 ### ### ###
 
 **INSIDE MINECRAFT:**
 
-_\computercraft\computer\##\_
+*\computercraft\computer\##\*
 
     'gitFetch3_iter.lua' -- Command the Turtle to fetch all of the *.lua Turtle scripts. Accesses the cc_dir_miners_list.json and uses it to generate http.get() requests for each file.
 
-## /3/ ### ### ###
+## /3 ### ### ###
