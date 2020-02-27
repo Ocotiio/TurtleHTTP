@@ -1,16 +1,19 @@
--- arguments
+-- FUNCTION: Manual input a Turtle's x, y, z, and cardinal direction.
+
+-- nsew booleans
 
 facing_north = false
 facing_south = false
 facing_east = false
 facing_west = false
 
+-- arguments
 
 local tArgs = { ... }
 if #tArgs ~= 4 then
     print( "Usage: serialize1_init_x x y z nsew" )
     print( "Input turtle's x y z nsew" )
-    print("x, y, z: input integers. nsew: input n, s, e, or w; script will parse.")
+    print( "x, y, z: input integers. nsew: input n, s, e, or w; script will parse." )
     return
 end
 

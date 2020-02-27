@@ -1,5 +1,5 @@
--- modemrcv0.lua
-
+-- modemrcv1.lua
+-- FUNCTION: Modem receive script. Waits for a GPS location transmission from another Turtle, and then moves to it. Waits for "ser6modem.lua" to transmit a location.
 
 -- Move functions
 

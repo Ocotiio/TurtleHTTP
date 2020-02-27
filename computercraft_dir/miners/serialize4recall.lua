@@ -1,3 +1,4 @@
+-- FUNCTION: Read the trtPos.txt file and output the x, y, z, and direction.
 
 -- unseralize phase 
 local r = fs.open("trtPos.txt", "r")    -- file read portion!!

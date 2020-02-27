@@ -1,3 +1,5 @@
+-- FUNCTION: Determine coordinates and cardinal direction. Uses gps.locate to get coordinates, and determines direction by moving one space forward and comparing the change in coordinates. 
+
 -- gps local init
 
 facing_north = false

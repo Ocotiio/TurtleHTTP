@@ -1,4 +1,6 @@
--- ser5modem.lua
+-- ser6modem.lua
+-- FUNCTION: Modem transmit script. Takes the Turtle's personal location and transmits its coordinates to a Turtle with 'modemrcv1.lua' running, summoning the receiving Turtle to the transmitted coordinates.
+
 
 --
 -- Unserialize Phase

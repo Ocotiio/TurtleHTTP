@@ -1,4 +1,5 @@
 -- PRE INIT
+-- FUNCTION: Transit the turtle to the specific location (x, y, z). Turtle will determine the number of steps needed to arrive at that location. Serializes afterward.
 
 -- -- -- Transit Set Up
 --Requires a turtle.--

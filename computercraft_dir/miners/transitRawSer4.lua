@@ -1,4 +1,5 @@
 -- PRE INIT
+-- FUNCTION: Transit the turtle (x, y, z) steps from where its located. Serializes afterward.
 
 -- -- -- Transit Set Up
 --Requires a turtle.--
