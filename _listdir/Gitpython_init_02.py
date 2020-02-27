@@ -68,12 +68,11 @@ for file in repo.index.diff(None):             ## for each file in the subdir, c
     print('new_file_path:', new_file_path)
     print('repo.index:', repo.index)
     #open(new_file_path,'w').close
-    print(str(path.exists(new_file_path)))
-    if path.exists(new_file_path):
-        repo.index.add([new_file_path])             ## Add the file located at new_file_path to the repo's index
-    else:
-        print(new_file_path, " does not exist. Skip.")
-    #repo.index.add([new_file_path])             ## Add the file located at new_file_path to the repo's index
+    print('File exists?', str(path.exists(new_file_path)))      ## Need to determine how to dynamically remove files that have been deleted. In the meantime, this if/else loop should prevent the script from returning an error if a file has been deleted.
+    if path.exists(new_file_path):                      ## Make sure file exists before trying to add it.
+        repo.index.add([new_file_path])                 ## Add the file located at new_file_path to the repo's index
+    else:                                               ## If file doesn't exist, skip.
+        print(new_file_path, " does not exist. Skip.")  ## File doesn't exist alert message.
     print()
 print()
 
