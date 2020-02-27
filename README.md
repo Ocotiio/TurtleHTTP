@@ -22,7 +22,7 @@
 
 **INSIDE THIS GIT REPO:**
 
-*\TurtleHTTP\_listdir\*
+\TurtleHTTP\_listdir\
 
 -SCRIPTS:
 
@@ -42,13 +42,13 @@
 
     - 'cc_dir_miners_list.json' -- .json file for MineCraft Turtle's to download and refer to. Contains program names for generating all the HTTP download requests.
 
-*\computercraft_dir\miners\*
+\computercraft_dir\
 
-*\gitFetch\*
+\gitFetch\
 
     - 'gitFetch3_iter.lua' -- Turtle's git fetch.
     
-*\miners\*
+\miners\
 
     - '_fromNN.txt' -- Debugging/development reference of which computer## these lua scripts are from. list_dir_miners_list.py ignores this file ('_' hides it.)
 
@@ -78,7 +78,7 @@
 
 **INSIDE MINECRAFT:**
 
-*\computercraft\computer\##\*
+\computercraft\computer\##\
 
     'gitFetch3_iter.lua' -- Command the Turtle to fetch all of the *.lua Turtle scripts. Accesses the cc_dir_miners_list.json and uses it to generate http.get() requests for each file.
 
